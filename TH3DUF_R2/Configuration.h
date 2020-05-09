@@ -1013,12 +1013,12 @@
 //- LINEAR_ADVANCE                (Configuration.h)
 //- LINEAR_ADVANCE_K 0            (Configuration.h)
 //- MANUAL_MESH_LEVELING          (Configuration.h)
-//- SDSUPPORT                     (#3487 comment out in Configuration_backend.h)
-//- SLIM_LCD_MENUS                (#3011 comment out in Configuration_backend.h)
-//- ENABLE_LEVELING_FADE_HEIGHT   (#3451 remove comment in Configuration_backend.h)
+//- SDSUPPORT                     (Comment out in Configuration_backend.h)
+//- SLIM_LCD_MENUS                (Comment out in Configuration_backend.h)
+//- ENABLE_LEVELING_FADE_HEIGHT   (Remove comment in Configuration_backend.h)
 
 //v2020-05-03.1
-//- LCD_INFO_MENU                 (#213 coment out in Configuration_adv.h)
+//- LCD_INFO_MENU                 (Comment out the 'if' in Configuration_adv.h)
 
 //v2020-05.09.1
 //- TH3D U1.R2.B2
