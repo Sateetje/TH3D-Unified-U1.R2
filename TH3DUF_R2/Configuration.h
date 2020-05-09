@@ -856,7 +856,7 @@
 
 // If you want more or less EZABL probe points change the number below (only used if EZABL enabled)
 // Default is 3 which gives you 3x3 grid for a total of 9 points. STICK WITH ODD NUMBERS
-#define EZABL_POINTS 3
+#define EZABL_POINTS 5
 
 // If you want to change how far in or out the probe senses change EZABL_PROBE_EDGE value below
 // Most Machines - 35
@@ -875,11 +875,11 @@
 //#define PROBING_MOTORS_OFF
 
 // Heaters will stay on during probing - only use if directed to by support. Do not use on AC beds.
-//#define HEATERS_ON_DURING_PROBING
+#define HEATERS_ON_DURING_PROBING
 
 // Letting the bed heat recover between probes can increase accuracy due to the bed warping during cooling/heating
 // Enabling the below option will let the bed get back to temperature during probing but will increase probing times.
-//#define WAIT_FOR_BED_HEATER
+#define WAIT_FOR_BED_HEATER
 
 // If you want a more granular control over the babystepping uncomment the below line.
 // This will make the adjustment finer than the standard setting.
@@ -1022,6 +1022,9 @@
 
 //v2020-05.09.1
 //- TH3D U1.R2.B2
+//- Changed EZABL_POINTS 3 to 5
+//- HEATERS_ON_DURING_PROBING     (Configuration.h)
+//- WAIT_FOR_BED_HEATER           (Configuration.h)
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
 #define SLOWER_HOMING
