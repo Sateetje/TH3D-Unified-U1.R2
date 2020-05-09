@@ -363,7 +363,7 @@
 //===========================================================================
 // Creality Ender 3/3 Pro Options - Select 'Sanguino 1284p' from Tools > Board
 //===========================================================================
-//#define ENDER3
+#define ENDER3
 
 // If you are using our EZOut V1/V2 (connected to LCD header) filament sensor kit please follow the install guide
 // and then uncomment the #define EZOUT_ENABLE line below.
@@ -1005,10 +1005,26 @@
 //#define FAN_FIX
 
 // Use your own printer name
-//#define USER_PRINTER_NAME "CHANGE ME" 
+#define USER_PRINTER_NAME "v2020-05-09.1"
+
+//v2020-05-02.1
+//- ENDER3                        (Configuration.h)
+//- SLOWER_HOMING                 (Configuration.h)
+//- LINEAR_ADVANCE                (Configuration.h)
+//- LINEAR_ADVANCE_K 0            (Configuration.h)
+//- MANUAL_MESH_LEVELING          (Configuration.h)
+//- SDSUPPORT                     (#3487 comment out in Configuration_backend.h)
+//- SLIM_LCD_MENUS                (#3011 comment out in Configuration_backend.h)
+//- ENABLE_LEVELING_FADE_HEIGHT   (#3451 remove comment in Configuration_backend.h)
+
+//v2020-05-03.1
+//- LCD_INFO_MENU                 (#213 coment out in Configuration_adv.h)
+
+//v2020-05.09.1
+//- TH3D U1.R2.B2
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
-//#define SLOWER_HOMING
+#define SLOWER_HOMING
 
 // Using a Creality Silent Board? Enable the below option to set the correct driver setting for those boards
 //#define TMC_CREALITY_BOARD
@@ -1037,7 +1053,7 @@
 // LINEAR ADVANCE ----------------------------------
 // See here on how to use Linear Advance: http://marlinfw.org/docs/features/lin_advance.html
 // NOTE: Linear Advance does NOT work with the Creality Silent boards, CR-10S Pro, CR-10S Max, and CR-10 V2 due to poor driver implementation.
-//#define LINEAR_ADVANCE
+#define LINEAR_ADVANCE
 // Change the K Value here or use M900 KX.XX in your starting code (recommended).
 #define LINEAR_ADVANCE_K 0
 
@@ -1062,7 +1078,7 @@
 // Mesh Bed Leveling Documentation: http://marlinfw.org/docs/gcode/G029-mbl.html If used with a 1284P board the bootscreen will be disabled to save space.
 // NOTE: This is not supported on the Wanhao i3 Plus due to the LCD limitations.
 // NOTE: If you want to automate the leveling process our EZABL kits do this for you. Check them out here: http://EZABL.TH3DStudio.com
-//#define MANUAL_MESH_LEVELING
+#define MANUAL_MESH_LEVELING
 
 // POWER LOSS RECOVERY -----------------------------
 // Continue after Power-Loss feature will store the current state to the SD Card at the start of each layer
